@@ -1,0 +1,69 @@
+CREATE TABLE tictactoe (ID int generated always as identity, Plasyer_Name text, X_or_O text, Number_of_Wins text);
+
+ALTER TABLE tictactoe 
+RENAME COLUMN Plasyer_Name TO Player_Name;
+
+INSERT INTO tictactoe (Player_Name, X_or_O, Number_of_Wins)
+VALUES
+('Jen Huynh', 'X', '6'),
+('Natalie Bencomo', 'O', '5'),
+('Zelma Sedano', 'X', '12'),
+('Sarah Graywood', 'O', '8');
+
+DELETE FROM tictactoe
+WHERE ID=5;
+
+INSERT INTO contacts(Name, Email, Phone, Notes)
+VALUES
+
+ALTER TABLE Contacts
+ADD image_url text;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*4nX8TmILPEJmGILBP7MMEA.jpeg' 
+WHERE contact_id= 1;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/888/1*Zo8LrzhmshsU0breLTEn_w.jpeg' 
+WHERE contact_id= 2;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/766/1*JCaLQO-pGkk3XgsJc6ecfw.jpeg' 
+WHERE contact_id= 3;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*flGtTUndV0fjYxQORaZHOw.jpeg' 
+WHERE contact_id= 4;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/500/1*W9db-RM1HrL0Gxft5UlWog.jpeg' 
+WHERE contact_id= 5;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/904/1*KYs1HNAzsIgTUTtnPOBhLg.jpeg' 
+WHERE contact_id= 6;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/800/1*Ybo6P1Yep-vyWIObfABEdg.jpeg' 
+WHERE contact_id= 7;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1400/1*0qigN_I6DSUX5WpAEDZDHg.png' 
+WHERE contact_id= 8;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/696/1*JrVohFj1RVN750wOdFfkMQ.jpeg' 
+WHERE contact_id= 9;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/660/1*CsVsesZdn_ZM0IGlw1vAyg.jpeg' 
+WHERE contact_id= 10;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*xQ8Ba3ioXfLQ_fcW_d8T-w.png' 
+WHERE contact_id= 11;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*B-TqqcFf426p4U0EIgIL8w.png' 
+WHERE contact_id= 12;
+
